@@ -1,0 +1,12 @@
+- content_for :hero
+  = fragment 'hero'
+    .landing.hero
+      #cover
+    .overlay
+    .content-holder
+      = container
+        = grid
+          = column size: 14, class: 'centered content'
+            = h1 class: 'inverted', text: 'Heading'
+            = text
+              | Sub Text

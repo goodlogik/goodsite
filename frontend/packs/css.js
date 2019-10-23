@@ -1,0 +1,5 @@
+import '../semantic_ui/dist/semantic.css'
+import '../css/utilities.scss'
+import '../css/variables.sass'
+import '../css/global.sass'
+import '../css/landing.sass'

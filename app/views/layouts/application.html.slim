@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    = stylesheet_pack_tag 'css'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato', media: 'none', onload: "if(media!='all')media='all'"
+    = javascript_pack_tag 'js', async: true
+    = csrf_meta_tags
+
+  body
+
+    = sidebar 'ui vertical inverted menu right'
+      = item
+        = button 'fluid red'
+          | Scheduel a Demo
+
+    .pusher
+      = segment 'vertical hero segment clearing '
+        = menu ui: :on, class: 'secondary inverted large'
+          = item url: root_path
+            | Logo
+          = menu class: 'right', only: :mobile
+            = item 'hamburger'
+              = icon 'large sidebar'
+          = menu class: 'right', only: :desktop
+            = item
+              = button 'red'
+                | Call to Action
+
+
+        = yield :hero
+      =yield

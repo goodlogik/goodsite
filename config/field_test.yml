@@ -1,0 +1,18 @@
+experiments:
+  button_color:
+    variants:
+      - red
+      - black inverted
+    description: >
+      The color of the CTA button
+    winner: red
+  button_text:
+    variants:
+      - Investors
+      - Become an Investor
+    description: >
+      The text of the CTA button
+
+
+exclude:
+  bots: true
